@@ -19,13 +19,15 @@
       <div class="row mt-5">
         <div class="col col-md-6">
           <div class="p-4 rounded-3 shadow">
-            <form>
+            <form id="input-form">
               <div class="p-3 mb-2 bg-warning text-dark">
                 <div class="mb-3">
                   <input
                     type="text"
                     class="form-control"
                     placeholder="First Name"
+                    name="firstName"
+                    required
                   />
                 </div>
                 <div class="mb-3">
@@ -33,20 +35,32 @@
                     type="text"
                     class="form-control"
                     placeholder="Last Name"
+                    name="lastName"
+                    required
                   />
                 </div>
 
                 <div class="mb-3">
-                  <input type="number" class="form-control" placeholder="Age" />
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Age"
+                    name="age"
+                    required
+                  />
                 </div>
 
                 <div class="mb-3">
-                  <button class="btn btn-primary position-relative">
+                  <button
+                    class="btn btn-primary position-relative"
+                    type="submit"
+                  >
                     Submit
                   </button>
                 </div>
               </div>
             </form>
+            <div id="output-text"></div>
           </div>
         </div>
       </div>
@@ -57,5 +71,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
